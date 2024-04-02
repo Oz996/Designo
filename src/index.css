@@ -19,7 +19,6 @@ body {
   .heading-sm {
     @apply text-[20px] leading-[26px] tracking-[] font-semibold;
   }
-
   .body {
     @apply text-[16px] leading-[26px];
   }

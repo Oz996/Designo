@@ -1,8 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/shared/Layout";
+
 function App() {
   return (
-    <section className=" w-screen h-screen">
-      <div>hi</div>
-    </section>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </>
   );
 }
 
