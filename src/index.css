@@ -11,7 +11,7 @@ body {
 @layer components {
   /* texts */
   .heading-lg {
-    @apply text-[48px] leading-[48px] font-bold;
+    @apply text-[48px] leading-[48px] font-semibold;
   }
   .heading-md {
     @apply text-[40px] leading-[48px] tracking-[] font-semibold;

@@ -20,6 +20,12 @@ export default {
           light: "#F1F3F5",
         },
       },
+      backgroundImage: {
+        "home-circle-desktop":
+          "url('/src/assets/home/desktop/bg-pattern-hero-home.svg')",
+        "home-phone-desktop":
+          "url('/src/assets/home/desktop/image-hero-phone.png')",
+      },
     },
   },
   plugins: [],
