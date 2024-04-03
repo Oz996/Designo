@@ -8,7 +8,7 @@ import Instagram from "../../assets/shared/desktop/icon-instagram.svg";
 
 const Footer = () => {
   return (
-    <footer className="h-[24.5rem] w-screen absolute left-0 bottom-0 right-0 bg-black-light">
+    <footer className="h-[24.5rem] w-full right-0 bg-black-light">
       <div className="container pt-36">
         <div className="flex justify-between">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
