@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="h-[24.5rem] w-full right-0 bg-black-light">
       <div className="container pt-36">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
           <nav aria-label="secondary">
             <ul className="text-[14px] text-white leading-[26px] uppercase flex gap-5">
