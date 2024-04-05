@@ -30,6 +30,8 @@ export default {
         "home-phone-desktop":
           "url('/src/assets/home/desktop/image-hero-phone.png')",
       },
+      "call-to-action-circles":
+        "url('/src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
     },
   },
   plugins: [],

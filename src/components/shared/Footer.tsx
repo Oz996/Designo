@@ -5,10 +5,25 @@ import Youtube from "../../assets/shared/desktop/icon-youtube.svg";
 import Twitter from "../../assets/shared/desktop/icon-twitter.svg";
 import Pinterest from "../../assets/shared/desktop/icon-pinterest.svg";
 import Instagram from "../../assets/shared/desktop/icon-instagram.svg";
+import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="h-[51rem] sm:h-[24.5rem] w-full right-0 bg-black-light">
+    <footer className="h-[51rem] sm:h-[24.5rem] w-full right-0 bg-black-light relative">
+      <div className="h-[18.5rem] w-[70rem] px-20 bg-peach absolute bottom-[19.5rem] left-[24rem] rounded-2xl bg-call-to-action-circles flex items-center justify-between">
+        <div className="flex flex-col">
+          <h2 className="heading-md text-white">
+            Let’s talk about <br /> your project
+          </h2>
+          <p className="body text-white">
+            Ready to take it to the next level? Contact us today and find out
+            how
+            <br />
+            our expertise can help your business grow.
+          </p>
+        </div>
+        <Button>get in touch</Button>
+      </div>
       <div className="container pt-36">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
