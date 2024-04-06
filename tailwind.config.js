@@ -7,7 +7,7 @@ export default {
       padding: {
         DEFAULT: "0rem",
         sm: "2rem",
-        lg: "14rem",
+        xl: "14rem",
       },
     },
     extend: {
@@ -33,10 +33,22 @@ export default {
           "url('/src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
         "home-web-design-desktop":
           "url('/src/assets/home/desktop/image-web-design-large.jpg')",
-        "home-app-design":
+        "home-app-design-desktop":
           "url('/src/assets/home/desktop/image-app-design.jpg')",
-        "home-graphic-design":
+        "home-graphic-design-desktop":
           "url('/src/assets/home/desktop/image-graphic-design.jpg')",
+        "home-web-design-tablet":
+          "url('/src/assets/home/tablet/image-web-design.jpg')",
+        "home-app-design-tablet":
+          "url('/src/assets/home/tablet/image-app-design.jpg')",
+        "home-graphic-design-tablet":
+          "url('/src/assets/home/tablet/image-graphic-design.jpg')",
+        "home-web-design-mobile":
+          "url('/src/assets/home/mobile/image-web-design.jpg')",
+        "home-app-design-mobile":
+          "url('/src/assets/home/mobile/image-app-design.jpg')",
+        "home-graphic-design-mobile":
+          "url('/src/assets/home/mobile/image-graphic-design.jpg')",
       },
     },
   },

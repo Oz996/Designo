@@ -1,4 +1,8 @@
 import Button from "../../components/shared/Button";
+import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
+import Passionate from "../../assets/home/desktop/illustration-passionate.svg";
+import Resourceful from "../../assets/home/desktop/illustration-resourceful.svg";
+import Friendly from "../../assets/home/desktop/illustration-friendly.svg";
 
 const Home = () => {
   return (
@@ -20,26 +24,54 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-[40rem] w-full flex gap-8 justify-between mt-10 text-white uppercase">
-        <div className="h-full w-full bg-home-web-design-desktop bg-no-repeat flex flex-col gap-5 justify-center items-center rounded-2xl relative">
-          <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-          <h2 className="heading-md tracking-wider z-20">web design</h2>
-          <p className="text-[15px] tracking-[5px] z-20">view projects</p>
-        </div>
-
+      <section className="lg:h-[40rem] w-full flex flex-col lg:flex-row gap-8 justify-between mt-10 text-white uppercase">
         <div className="flex flex-col h-full w-full justify-between gap-5">
-          <div className="bg-home-app-design bg-no-repeat flex flex-col gap-5 h-[50%] justify-center items-center rounded-2xl relative">
+          <div className="bg-home-web-design-mobile sm:bg-home-web-design-tablet lg:bg-home-web-design-desktop h-[15.5rem] sm:h-[12.5rem] lg:h-full w-full bg-no-repeat flex flex-col gap-5 justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-            <h2 className="heading-md tracking-wider z-20">app design</h2>
-            <p className="text-[15px] tracking-[5px] z-20">view projects</p>
+            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
+              web design
+            </h2>
+            <div className="flex gap-5 items-center z-20">
+              <p className="text-[15px] tracking-[5px]">view projects</p>
+              <img src={ArrowRight} alt="" />
+            </div>
           </div>
-          <div className="bg-home-graphic-design bg-no-repeat flex flex-col gap-5 h-[50%] justify-center items-center rounded-2xl relative">
+        </div>
+        <div className="flex flex-col h-full w-full justify-between gap-5">
+          <div className="bg-home-app-design-mobile sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop bg-no-repeat flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-            <h2 className="heading-md tracking-wider z-20">graphic design</h2>
-            <p className="text-[15px] tracking-[5px] z-20">view projects</p>
+            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
+              app design
+            </h2>
+            <div className="flex gap-5 items-center z-20">
+              <p className="text-[15px] tracking-[5px]">view projects</p>
+              <img src={ArrowRight} alt="" />
+            </div>
+          </div>
+          <div className="bg-home-graphic-design-mobile sm:bg-home-graphic-design-tablet lg:bg-home-graphic-design-desktop bg-no-repeat flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative">
+            <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
+            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
+              graphic design
+            </h2>
+            <div className="flex gap-5 items-center z-20">
+              <p className="text-[15px] tracking-[5px]">view projects</p>
+              <img src={ArrowRight} alt="" />
+            </div>
           </div>
         </div>
       </section>
+
+      {/* <section className="grid grid-cols-3">
+        <div className="place-self-center">
+          <img src={Resourceful} alt="" />
+        </div>
+        <div className="place-self-center">
+          <img src={Passionate} alt="" />
+        </div>
+        <div className="place-self-center">
+          <img src={Friendly} alt="" />
+        </div>
+      </section> */}
     </>
   );
 };
