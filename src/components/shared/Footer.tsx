@@ -9,20 +9,20 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="h-[51rem] sm:h-[24.5rem] w-full right-0 bg-black-light relative">
-      <div className="h-[18.5rem] w-[70rem] px-20 bg-peach absolute bottom-[19.5rem] left-[24rem] rounded-2xl bg-call-to-action-circles bg-right bg-no-repeat flex items-center justify-between">
-        <div className="flex flex-col">
-          <h2 className="heading-md text-white">
-            Let’s talk about <br /> your project
-          </h2>
-          <p className="body text-white">
-            Ready to take it to the next level? Contact us today and find out
-            how
-            <br />
-            our expertise can help your business grow.
-          </p>
+    <footer className="h-[51rem] sm:h-[24.5rem] w-full right-0 bg-black-light relative max-sm:flex max-sm:items-end max-sm:pb-10">
+      <div className="absolute bottom-[38rem] sm:bottom-[19.5rem] left-0 right-0 flex justify-center items-center w-full container max-sm:px-5 overflow-hidden z-20">
+        <div className="max-md:text-center max-sm:py-20 sm:h-[22rem] lg:h-[18.5rem] w-full px-5 sm:px-20 bg-peach rounded-2xl bg-call-to-action-circles bg-right bg-no-repeat flex max-md:flex-col items-center max-md:justify-center max-md:gap-7 justify-between">
+          <div className="flex flex-col">
+            <h2 className="heading-mobile sm:heading-md text-white">
+              Let’s talk about <br /> your project
+            </h2>
+            <p className="body text-white">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+          <Button>get in touch</Button>
         </div>
-        <Button>get in touch</Button>
       </div>
       <div className="container pt-36">
         <div className="flex flex-col sm:flex-row justify-between items-center">
