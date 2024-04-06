@@ -10,7 +10,7 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <footer className="h-[51rem] sm:h-[24.5rem] w-full right-0 bg-black-light relative">
-      <div className="h-[18.5rem] w-[70rem] px-20 bg-peach absolute bottom-[19.5rem] left-[24rem] rounded-2xl bg-call-to-action-circles flex items-center justify-between">
+      <div className="h-[18.5rem] w-[70rem] px-20 bg-peach absolute bottom-[19.5rem] left-[24rem] rounded-2xl bg-call-to-action-circles bg-right bg-no-repeat flex items-center justify-between">
         <div className="flex flex-col">
           <h2 className="heading-md text-white">
             Let’s talk about <br /> your project
