@@ -14,10 +14,10 @@ body {
     @apply text-[48px] leading-[48px] font-semibold;
   }
   .heading-md {
-    @apply text-[40px] leading-[48px] tracking-[] font-semibold;
+    @apply text-[40px] leading-[48px] tracking-[2px] font-semibold;
   }
   .heading-sm {
-    @apply text-[20px] leading-[26px] tracking-[] font-semibold;
+    @apply text-[20px] leading-[26px] tracking-[5px] font-semibold;
   }
   .heading-mobile {
     @apply text-[32px];

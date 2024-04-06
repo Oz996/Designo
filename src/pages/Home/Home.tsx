@@ -28,9 +28,7 @@ const Home = () => {
         <div className="flex flex-col h-full w-full justify-between gap-5">
           <div className="bg-home-web-design-mobile sm:bg-home-web-design-tablet lg:bg-home-web-design-desktop h-[15.5rem] sm:h-[12.5rem] lg:h-full w-full bg-no-repeat flex flex-col gap-5 justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
-              web design
-            </h2>
+            <h2 className="text-[28px] sm:heading-md z-20">web design</h2>
             <div className="flex gap-5 items-center z-20">
               <p className="text-[15px] tracking-[5px]">view projects</p>
               <img src={ArrowRight} alt="" />
@@ -40,9 +38,7 @@ const Home = () => {
         <div className="flex flex-col h-full w-full justify-between gap-5">
           <div className="bg-home-app-design-mobile sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop bg-no-repeat flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
-              app design
-            </h2>
+            <h2 className="text-[28px] sm:heading-md z-20">app design</h2>
             <div className="flex gap-5 items-center z-20">
               <p className="text-[15px] tracking-[5px]">view projects</p>
               <img src={ArrowRight} alt="" />
@@ -50,9 +46,7 @@ const Home = () => {
           </div>
           <div className="bg-home-graphic-design-mobile sm:bg-home-graphic-design-tablet lg:bg-home-graphic-design-desktop bg-no-repeat flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay z-10 rounded-2xl" />
-            <h2 className="text-[28px] sm:heading-md tracking-wider z-20">
-              graphic design
-            </h2>
+            <h2 className="text-[28px] sm:heading-md z-20">graphic design</h2>
             <div className="flex gap-5 items-center z-20">
               <p className="text-[15px] tracking-[5px]">view projects</p>
               <img src={ArrowRight} alt="" />
@@ -61,17 +55,41 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section className="grid grid-cols-3">
-        <div className="place-self-center">
-          <img src={Resourceful} alt="" />
+      <section className="grid grid-cols-3 gap-10 mt-20 text-center sm:text-left lg:text-center">
+        <div className="space-y-10">
+          <div className="flex items-center justify-center bg-circle-variant-one bg-no-repeat bg-top">
+            <img src={Passionate} alt="" />
+          </div>
+          <h2 className="heading-sm uppercase pt-3">passionate</h2>
+          <p className="body">
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
         </div>
-        <div className="place-self-center">
-          <img src={Passionate} alt="" />
+        <div className="space-y-10">
+          <div className="flex items-center justify-center bg-circle-variant-two bg-no-repeat bg-top">
+            <img src={Resourceful} alt="" />
+          </div>
+          <h2 className="heading-sm uppercase pt-3">resourceful</h2>
+          <p className="body">
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our clients’ needs.
+          </p>
         </div>
-        <div className="place-self-center">
-          <img src={Friendly} alt="" />
+        <div className="space-y-10">
+          <div className="flex items-center justify-center bg-circle-variant-three bg-no-repeat bg-top">
+            <img src={Friendly} alt="" />
+          </div>
+          <h2 className="heading-sm uppercase pt-3">friendly</h2>
+          <p className="body">
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </p>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };

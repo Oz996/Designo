@@ -25,6 +25,7 @@ export default {
         },
       },
       backgroundImage: {
+        // home section
         "home-circle-desktop":
           "url('/src/assets/home/desktop/bg-pattern-hero-home.svg')",
         "home-phone-desktop":
@@ -49,6 +50,13 @@ export default {
           "url('/src/assets/home/mobile/image-app-design.jpg')",
         "home-graphic-design-mobile":
           "url('/src/assets/home/mobile/image-graphic-design.jpg')",
+        // shared
+        "circle-variant-one":
+          "url('/src/assets/shared/desktop/bg-circle-variant-one.svg')",
+        "circle-variant-two":
+          "url('/src/assets/shared/desktop/bg-circle-variant-two.svg')",
+        "circle-variant-three":
+          "url('/src/assets/shared/desktop/bg-circle-variant-three.svg')",
       },
     },
   },
