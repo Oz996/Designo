@@ -7,7 +7,7 @@ export default {
       padding: {
         DEFAULT: "0rem",
         sm: "2rem",
-        lg: "6rem",
+        lg: "14rem",
       },
     },
     extend: {
@@ -31,6 +31,12 @@ export default {
           "url('/src/assets/home/desktop/image-hero-phone.png')",
         "call-to-action-circles":
           "url('/src/assets/shared/desktop/bg-pattern-call-to-action.svg')",
+        "home-web-design-desktop":
+          "url('/src/assets/home/desktop/image-web-design-large.jpg')",
+        "home-app-design":
+          "url('/src/assets/home/desktop/image-app-design.jpg')",
+        "home-graphic-design":
+          "url('/src/assets/home/desktop/image-graphic-design.jpg')",
       },
     },
   },
