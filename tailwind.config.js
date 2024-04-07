@@ -58,6 +58,9 @@ export default {
         "circle-variant-three":
           "url('/src/assets/shared/desktop/bg-circle-variant-three.svg')",
       },
+      content: {
+        "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",
+      },
     },
   },
   plugins: [],

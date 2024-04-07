@@ -12,11 +12,11 @@ const Footer = () => {
     <footer className="h-[51rem] sm:h-[24.5rem] w-full bg-black-light relative max-sm:flex max-sm:items-end max-sm:pb-10">
       <div className="absolute bottom-[38rem] sm:bottom-[19.5rem] left-0 right-0 flex justify-center items-center w-full container max-sm:px-5 overflow-hidden z-20">
         <div className="max-md:text-center max-sm:py-20 sm:h-[22rem] lg:h-[18.5rem] w-full px-5 sm:px-20 bg-peach rounded-2xl bg-call-to-action-circles bg-right bg-no-repeat flex max-md:flex-col items-center max-md:justify-center max-md:gap-7 justify-between">
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-5">
             <h2 className="heading-mobile sm:heading-md text-white">
               Let’s talk about <br /> your project
             </h2>
-            <p className="body text-white">
+            <p className="body text-white lg:w-[27rem]">
               Ready to take it to the next level? Contact us today and find out
               how our expertise can help your business grow.
             </p>
