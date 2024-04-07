@@ -13,15 +13,30 @@ const Header = () => {
         <div className="container py-5 flex justify-between items-center">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
           <nav aria-label="primary">
-            <ul className="text-[14px] leading-[26px] uppercase flex gap-5">
-              <li>
-                <Link to="#">our company</Link>
+            <ul className="text-[14px] leading-[26px] uppercase flex gap-5 relative">
+              <li className="relative">
+                <Link
+                  to="#"
+                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:bg-peach after:origin-left after:scale-0 hover:after:scale-100 after:duration-300"
+                >
+                  our company
+                </Link>
               </li>
-              <li>
-                <Link to="#">locations</Link>
+              <li className="relative">
+                <Link
+                  to="#"
+                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:bg-peach after:origin-left after:scale-0 hover:after:scale-100 after:duration-300"
+                >
+                  locations
+                </Link>
               </li>
-              <li>
-                <Link to="#">contact</Link>
+              <li className="relative">
+                <Link
+                  to="#"
+                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:bg-peach after:origin-left after:scale-0 hover:after:scale-100 after:duration-300"
+                >
+                  contact
+                </Link>
               </li>
             </ul>
           </nav>
