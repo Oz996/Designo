@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 text-center sm:text-left lg:text-center">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 text-center sm:text-left lg:text-center pb-[23rem]">
         <div className="flex flex-col sm:flex-row lg:flex-col gap-10">
           <div className="flex items-center justify-center bg-circle-variant-one bg-no-repeat bg-top w-full">
             <img src={Passionate} alt="" />
