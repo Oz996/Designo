@@ -3,10 +3,12 @@ import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
 import Passionate from "../../assets/home/desktop/illustration-passionate.svg";
 import Resourceful from "../../assets/home/desktop/illustration-resourceful.svg";
 import Friendly from "../../assets/home/desktop/illustration-friendly.svg";
+import Title from "../../components/shared/Ttile";
 
 const Home = () => {
   return (
     <>
+      <Title>Designo Landing</Title>
       <section className="h-[52.5rem] lg:h-[40rem] bg-peach sm:rounded bg-home-circle-desktop bg-no-repeat bg-right relative overflow-hidden flex max-lg:pt-14 lg:items-center">
         <div className="w-[30rem] h-[40rem] bg-home-phone-desktop lg:bg-right absolute max-sm:left-[-7rem] bottom-[-5rem] sm:bottom-[-5.5rem] lg:left-[43rem] lg:top-[6rem]" />
         <div className="text-center lg:text-start px-3 sm:px-20 flex flex-col gap-5 lg:gap-10 w-[42rem] z-10">
