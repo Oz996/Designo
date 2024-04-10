@@ -27,7 +27,7 @@ const Header = () => {
               <li className="relative">
                 <Link
                   to="#"
-                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-0 hover:after:scale-100 after:duration-300"
+                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
                 >
                   locations
                 </Link>
@@ -35,7 +35,7 @@ const Header = () => {
               <li className="relative">
                 <Link
                   to="#"
-                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-0 hover:after:scale-100 after:duration-300"
+                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
                 >
                   contact
                 </Link>
