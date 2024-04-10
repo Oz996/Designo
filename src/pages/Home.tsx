@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <Title>Designo Landing</Title>
+      <Title>Landing - Designo</Title>
       <section className="h-[52.5rem] lg:h-[40rem] bg-peach sm:rounded bg-home-circle-desktop bg-no-repeat bg-right relative overflow-hidden flex max-lg:pt-14 lg:items-center">
         <div className="w-[30rem] h-[40rem] bg-home-phone-desktop lg:bg-right absolute max-sm:left-[-7rem] bottom-[-5rem] sm:bottom-[-5.5rem] lg:left-[43rem] lg:top-[6rem]" />
         <div className="text-center lg:text-start px-3 sm:px-20 flex flex-col gap-5 lg:gap-10 w-[42rem] z-10">
@@ -30,7 +30,7 @@ const Home = () => {
       <section className="lg:h-[40rem] flex flex-col lg:flex-row gap-8 justify-between mt-10 text-white uppercase">
         <Link
           to="/webdesign"
-          className="flex flex-col w-full justify-between group hover:opacity-95 active:opacity-90 active:duration-75 duration-300"
+          className="flex flex-col w-full justify-between group active:opacity-90 active:duration-75 hover:opacity-95 duration-300"
         >
           <div className="bg-home-web-design-mobile bg-cover sm:bg-home-web-design-tablet lg:bg-home-web-design-desktop h-[15.5rem] sm:h-[12.5rem] lg:h-full flex flex-col gap-5 justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay rounded-2xl" />
@@ -44,22 +44,22 @@ const Home = () => {
         <div className="flex flex-col w-full justify-between gap-5">
           <Link
             to="/appdesign"
-            className="bg-home-app-design-mobile bg-cover sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative"
+            className="bg-home-app-design-mobile bg-cover sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop group flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl active:opacity-90 active:duration-75 hover:opacity-95 duration-300 relative"
           >
             <div className="absolute inset-0 image-overlay rounded-2xl" />
             <h2 className="text-[28px] sm:heading-md z-10">app design</h2>
-            <div className="flex gap-5 items-center z-10">
+            <div className="flex gap-5 group-hover:gap-6 duration-300 items-center z-10">
               <p className="text-[15px] tracking-[5px]">view projects</p>
               <img src={ArrowRight} alt="" />
             </div>
           </Link>
           <Link
-            to="/"
-            className="bg-home-graphic-design-mobile bg-cover sm:bg-home-graphic-design-tablet lg:bg-home-graphic-design-desktop flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative"
+            to="/graphicdesign"
+            className="bg-home-graphic-design-mobile bg-cover sm:bg-home-graphic-design-tablet lg:bg-home-graphic-design-desktop group flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl active:opacity-90 active:duration-75 hover:opacity-95 duration-300 relative"
           >
             <div className="absolute inset-0 image-overlay rounded-2xl" />
             <h2 className="text-[28px] sm:heading-md z-10">graphic design</h2>
-            <div className="flex gap-5 items-center z-10">
+            <div className="flex gap-5 group-hover:gap-6 duration-300 items-center z-10">
               <p className="text-[15px] tracking-[5px]">view projects</p>
               <img src={ArrowRight} alt="" />
             </div>

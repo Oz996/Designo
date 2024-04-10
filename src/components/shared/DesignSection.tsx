@@ -30,7 +30,8 @@ const DesignSection = () => {
           className={classNames({
             "w-full flex flex-col gap-5 h-[15.5rem] lg:h-[19.25rem] justify-center items-center rounded-2xl bg-cover relative":
               true,
-            "hover:opacity-95 duration-300 group": true,
+            "hover:opacity-95 duration-300 group active:opacity-90 active:duration-75":
+              true,
             "bg-home-app-design-mobile sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop":
               link.path === "/appdesign",
             "bg-home-graphic-design-mobile sm:bg-home-graphic-design-tablet lg:bg-home-graphic-design-desktop":

@@ -6,7 +6,7 @@ import Title from "../components/shared/Title";
 const WebDesign = () => {
   return (
     <section className="mb-[20rem]">
-      <Title>Web Design</Title>
+      <Title>Web Design - Designo</Title>
       <PageBanner />
       <Cards />
       <DesignSection />
