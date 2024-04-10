@@ -1,9 +1,10 @@
-import Button from "../../components/shared/Button";
-import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
-import Passionate from "../../assets/home/desktop/illustration-passionate.svg";
-import Resourceful from "../../assets/home/desktop/illustration-resourceful.svg";
-import Friendly from "../../assets/home/desktop/illustration-friendly.svg";
-import Title from "../../components/shared/Ttile";
+import Button from "../components/shared/Button";
+import ArrowRight from "../assets/shared/desktop/icon-right-arrow.svg";
+import Passionate from "../assets/home/desktop/illustration-passionate.svg";
+import Resourceful from "../assets/home/desktop/illustration-resourceful.svg";
+import Friendly from "../assets/home/desktop/illustration-friendly.svg";
+import Title from "../components/shared/Title";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
       </section>
 
       <section className="lg:h-[40rem] flex flex-col lg:flex-row gap-8 justify-between mt-10 text-white uppercase">
-        <div className="flex flex-col w-full justify-between">
+        <Link to="/webdesign" className="flex flex-col w-full justify-between">
           <div className="bg-home-web-design-mobile bg-cover sm:bg-home-web-design-tablet lg:bg-home-web-design-desktop h-[15.5rem] sm:h-[12.5rem] lg:h-full flex flex-col gap-5 justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay rounded-2xl" />
             <h2 className="text-[28px] sm:heading-md z-10">web design</h2>
@@ -36,7 +37,7 @@ const Home = () => {
               <img src={ArrowRight} alt="" />
             </div>
           </div>
-        </div>
+        </Link>
         <div className="flex flex-col w-full justify-between gap-5">
           <div className="bg-home-app-design-mobile bg-cover sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative">
             <div className="absolute inset-0 image-overlay rounded-2xl" />
