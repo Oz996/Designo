@@ -1,4 +1,5 @@
 import Cards from "../components/shared/Cards";
+import DesignSection from "../components/shared/DesignSection";
 import Title from "../components/shared/Title";
 
 const WebDesign = () => {
@@ -17,6 +18,7 @@ const WebDesign = () => {
         </div>
       </section>
       <Cards />
+      <DesignSection />
       <section className="mb-[20rem]"></section>
     </>
   );
