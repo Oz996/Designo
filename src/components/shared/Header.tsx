@@ -11,7 +11,9 @@ const Header = () => {
       {/* desktop navbar */}
       <header className="max-sm:hidden h-[6rem] sm:flex w-full absolute left-0 top-0 right-0">
         <div className="container py-5 flex justify-between items-center">
-          <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          </Link>
           <nav aria-label="primary">
             <ul className="text-[14px] leading-[26px] uppercase flex gap-5 relative">
               <li className="relative">
