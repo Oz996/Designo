@@ -3,6 +3,7 @@ import { WebDesignData } from "../../data/WebDesign";
 import { useEffect, useState } from "react";
 import { Card } from "../../data/CardInterface";
 import { AppDesignData } from "../../data/AppDesign";
+import { GraphicDesignData } from "../../data/GraphicDesign";
 
 const Cards = () => {
   const [cardData, setCardData] = useState<Card[]>([]);
@@ -15,11 +16,13 @@ const Cards = () => {
       setCardData(WebDesignData);
     } else if (appdesign) {
       setCardData(AppDesignData);
+    } else {
+      setCardData(GraphicDesignData);
     }
   }, [webdesign, appdesign]);
 
   return (
-    <section className="w-full grid lg:grid-cols-3 gap-6">
+    <section className="w-full grid lg:grid-cols-3 gap-6 mb-[10rem]">
       {cardData.map((card) => (
         <article
           key={card.title}
