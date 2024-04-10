@@ -43,7 +43,7 @@ const Home = () => {
         </Link>
         <div className="flex flex-col w-full justify-between gap-5">
           <Link
-            to="/"
+            to="/appdesign"
             className="bg-home-app-design-mobile bg-cover sm:bg-home-app-design-tablet lg:bg-home-app-design-desktop flex flex-col gap-5 h-[15.5rem] sm:h-[12.5rem] lg:h-[50%] justify-center items-center rounded-2xl relative"
           >
             <div className="absolute inset-0 image-overlay rounded-2xl" />
@@ -67,7 +67,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 text-center sm:text-left lg:text-center pb-[23rem]">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20 text-center sm:text-left lg:text-center">
         <div className="flex flex-col sm:flex-row lg:flex-col gap-10">
           <div className="flex items-center justify-center bg-circle-variant-one bg-no-repeat bg-top w-full">
             <img src={Passionate} alt="" />
