@@ -57,9 +57,13 @@ export default {
           "url('/src/assets/shared/desktop/bg-circle-variant-two.svg')",
         "circle-variant-three":
           "url('/src/assets/shared/desktop/bg-circle-variant-three.svg')",
-        // web-design
+        // design pages
         "web-design-bg":
           "url('/src/assets/web-design/desktop/bg-pattern-intro-web.svg')",
+        "app-design-bg":
+          "url('/src/assets/app-design/desktop/bg-pattern-intro-app.svg')",
+        "graphic-design-bg":
+          "url('/src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg')",
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",

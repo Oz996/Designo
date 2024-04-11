@@ -18,7 +18,7 @@ const Header = () => {
             <ul className="text-[14px] leading-[26px] uppercase flex gap-5 relative">
               <li className="relative">
                 <Link
-                  to="#"
+                  to="/about"
                   className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
                 >
                   our company
