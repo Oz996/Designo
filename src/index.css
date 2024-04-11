@@ -25,6 +25,9 @@ body {
   .body {
     @apply text-[16px] leading-[26px];
   }
+  .body-mobile {
+    @apply text-[15px] leading-[26px];
+  }
 }
 
 .image-overlay {

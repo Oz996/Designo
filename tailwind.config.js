@@ -64,6 +64,15 @@ export default {
           "url('/src/assets/app-design/desktop/bg-pattern-intro-app.svg')",
         "graphic-design-bg":
           "url('/src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg')",
+        // about
+        "about-circle-desktop":
+          "url('/src/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
+        "about-hero-desktop":
+          "url('/src/assets/about/desktop/image-about-hero.jpg')",
+        "about-hero-tablet":
+          "url('/src/assets/about/tablet/image-about-hero.jpg')",
+        "about-hero-mobile":
+          "url('/src/assets/about/mobile/image-about-hero.jpg')",
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",
