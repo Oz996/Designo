@@ -19,7 +19,7 @@ const Button = ({ variant = "primary", children }: props) => {
         "before:absolute before:inset-0 before:bg-gray-100 before:w-0 hover:before:w-full before:duration-200 before:-z-10 before:active:bg-peach-light":
           true,
         "bg-white": variant === "primary",
-        "bg-peach text-black-light": variant === "secondary",
+        "bg-peach text-white": variant === "secondary",
       })}
     >
       {children}
