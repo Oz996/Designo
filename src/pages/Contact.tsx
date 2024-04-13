@@ -77,8 +77,8 @@ const Contact = () => {
       }));
     }
 
-    const isInvalid = Object.values(errors).map((error) => error === "");
-    if (isInvalid) return;
+    const isValid = Object.values(errors).map((error) => error === "");
+    if (!isValid) return;
 
     setSuccess(true);
   };

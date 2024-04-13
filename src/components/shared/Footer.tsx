@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/shared/desktop/logo-light.png";
 import Facebook from "../../assets/shared/desktop/icon-facebook.svg";
 import Youtube from "../../assets/shared/desktop/icon-youtube.svg";
@@ -7,11 +7,27 @@ import Pinterest from "../../assets/shared/desktop/icon-pinterest.svg";
 import Instagram from "../../assets/shared/desktop/icon-instagram.svg";
 import Button from "./Button";
 import { scrollToTop } from "../../utils/scrolls";
+import classNames from "classnames";
 
 const Footer = () => {
+  const location = useLocation();
+  const contactPage = location.pathname === "/contact";
   return (
-    <footer className="h-[51rem] sm:h-[24.5rem] w-full bg-black-light relative max-sm:flex max-sm:items-end max-sm:pb-10 mt-[23rem]">
-      <div className="absolute bottom-[38rem] sm:bottom-[19.5rem] left-0 right-0 flex justify-center items-center w-full container max-sm:px-5 overflow-hidden z-20">
+    <footer
+      className={classNames({
+        "w-full bg-black-light relative max-sm:flex max-sm:items-end max-sm:pb-10 mt-[23rem]":
+          true,
+        " sm:h-[24.5rem] h-[51rem]": !contactPage,
+        "sm:h-[20rem]": contactPage,
+      })}
+    >
+      <div
+        className={classNames({
+          "absolute bottom-[38rem] sm:bottom-[19.5rem] left-0 right-0 flex justify-center items-center w-full container max-sm:px-5 overflow-hidden z-20":
+            true,
+          hidden: contactPage,
+        })}
+      >
         <div className="max-md:text-center max-sm:py-20 sm:h-[22rem] lg:h-[18.5rem] w-full px-5 sm:px-20 bg-peach rounded-2xl bg-call-to-action-circles bg-right bg-no-repeat flex max-md:flex-col items-center max-md:justify-center max-md:gap-7 justify-between">
           <div className="flex flex-col space-y-5">
             <h2 className="heading-mobile sm:heading-md text-white">
@@ -25,7 +41,12 @@ const Footer = () => {
           <Button>get in touch</Button>
         </div>
       </div>
-      <div className="container pt-36">
+      <div
+        className={classNames({
+          "container pt-36": true,
+          "pt-20": contactPage,
+        })}
+      >
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
           <hr className="sm:hidden my-8 w-full border-[#979797]" />
