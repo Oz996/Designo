@@ -69,8 +69,7 @@ export default {
           "url('/src/assets/app-design/desktop/bg-pattern-intro-app.svg')",
         "graphic-design-bg":
           "url('/src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg')",
-        // about
-        // hero
+        // about - hero
         "about-circle-desktop":
           "url('/src/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
         "about-hero-desktop":
@@ -79,14 +78,14 @@ export default {
           "url('/src/assets/about/tablet/image-about-hero.jpg')",
         "about-hero-mobile":
           "url('/src/assets/about/mobile/image-about-hero.jpg')",
-        // world class
+        // about - world class
         "about-world-class-desktop":
           "url('/src/assets/about/desktop/image-world-class-talent.jpg')",
         "about-world-class-tablet":
           "url('/src/assets/about/tablet/image-world-class-talent.jpg')",
         "about-world-class-mobile":
           "url('/src/assets/about/mobile/image-world-class-talent.jpg')",
-        // real deal
+        // about - real deal
         "about-real-deal-desktop":
           "url('/src/assets/about/desktop/image-real-deal.jpg')",
         "about-real-deal-tablet":
@@ -96,6 +95,8 @@ export default {
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",
+        checkmark: "url('/src/assets/contact/desktop/checkmark.svg')",
+        "error-icon": "url('/src/assets/contact/desktop/icon-error.svg')",
       },
     },
   },

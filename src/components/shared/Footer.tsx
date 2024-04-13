@@ -42,7 +42,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#">contact</Link>
+                <Link to="/contact" onClick={scrollToTop}>
+                  contact
+                </Link>
               </li>
             </ul>
           </nav>

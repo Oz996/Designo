@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 interface props {
   variant?: "primary" | "secondary";
+  size?: "small";
   children: string;
 }
 
@@ -18,7 +19,7 @@ const Button = ({ variant = "primary", children }: props) => {
           true,
         "before:absolute before:inset-0 before:bg-gray-100 before:w-0 hover:before:w-full before:duration-200 before:-z-10 before:active:bg-peach-light":
           true,
-        "bg-white": variant === "primary",
+        "bg-white text-black-light": variant === "primary",
         "bg-peach text-white": variant === "secondary",
       })}
     >

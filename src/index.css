@@ -28,6 +28,11 @@ body {
   .body-mobile {
     @apply text-[15px] leading-[26px];
   }
+
+  /* elements */
+  .input {
+    @apply bg-peach border border-b-white border-t-0 border-l-0 border-r-0 focus:outline-none w-full py-3 px-5 focus:border-b-[3px] placeholder:text-white placeholder:text-opacity-55 focus:placeholder:text-opacity-100;
+  }
 }
 
 .image-overlay {
