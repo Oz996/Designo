@@ -6,6 +6,7 @@ import Twitter from "../../assets/shared/desktop/icon-twitter.svg";
 import Pinterest from "../../assets/shared/desktop/icon-pinterest.svg";
 import Instagram from "../../assets/shared/desktop/icon-instagram.svg";
 import Button from "./Button";
+import { scrollToTop } from "../../utils/scrolls";
 
 const Footer = () => {
   return (
@@ -27,14 +28,18 @@ const Footer = () => {
       <div className="container pt-36">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
-          <hr className="sm:hidden my-8 w-full" />
+          <hr className="sm:hidden my-8 w-full border-[#979797]" />
           <nav aria-label="secondary">
             <ul className="text-[14px] text-white leading-[26px] uppercase flex flex-col sm:flex-row gap-5 text-center">
               <li>
-                <Link to="#">our company</Link>
+                <Link to="/about" onClick={scrollToTop}>
+                  our company
+                </Link>
               </li>
               <li>
-                <Link to="#">locations</Link>
+                <Link to="/locations" onClick={scrollToTop}>
+                  locations
+                </Link>
               </li>
               <li>
                 <Link to="#">contact</Link>
@@ -42,7 +47,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <hr className="hidden sm:block my-10 w-full" />
+        <hr className="hidden sm:block my-10 w-full border-[#979797]" />
         <div className="flex flex-col sm:flex-row justify-between max-sm:gap-10 max-sm:pt-10">
           <div className="body text-neutral-500 max-sm:text-center">
             <address className="not-italic">

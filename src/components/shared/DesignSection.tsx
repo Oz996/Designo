@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
 import classNames from "classnames";
+import { scrollToTop } from "../../utils/scrolls";
 
 const DesignSection = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const DesignSection = () => {
       {links.map((link) => (
         <Link
           to={link.path}
+          onClick={scrollToTop}
           className={classNames({
             "w-full flex flex-col gap-5 h-[15.5rem] lg:h-[19.25rem] justify-center items-center rounded-2xl bg-cover relative":
               true,

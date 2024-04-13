@@ -32,7 +32,7 @@ const Locations = () => {
         <img
           src={Canada}
           alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full max-lg:bg-cover max-lg:order-first sm:hidden lg:block"
+          className="sm:rounded-2xl h-full w-full max-lg:order-first sm:hidden lg:block"
         />
         {/* tablet image */}
         <img
@@ -41,6 +41,7 @@ const Locations = () => {
           className="sm:rounded-2xl h-full w-full bg-cover max-lg:order-first hidden sm:block lg:hidden"
         />
       </section>
+
       <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
         <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">
@@ -65,7 +66,7 @@ const Locations = () => {
         <img
           src={Australia}
           alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full max-lg:bg-cover order-first sm:hidden lg:block"
+          className="sm:rounded-2xl h-full w-full order-first sm:hidden lg:block"
         />
         {/* tablet image */}
         <img
@@ -74,6 +75,7 @@ const Locations = () => {
           className="sm:rounded-2xl h-full w-full bg-cover max-lg:order-first hidden sm:block lg:hidden"
         />
       </section>
+
       <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
         <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">
@@ -98,7 +100,7 @@ const Locations = () => {
         <img
           src={UK}
           alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full max-lg:bg-cover max-lg:order-first sm:hidden lg:block"
+          className="sm:rounded-2xl h-full w-full max-lg:order-first sm:hidden lg:block"
         />
         {/* tablet image */}
         <img
