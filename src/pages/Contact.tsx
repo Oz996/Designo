@@ -1,7 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import Button from "../components/shared/Button";
 import Title from "../components/shared/Title";
-import Checkmark from "../assets/contact/desktop/checkmark.svg";
 import classNames from "classnames";
 
 const initState = {
@@ -20,7 +19,7 @@ const Contact = () => {
   });
 
   console.log(formData);
-  console.log(errors);
+  console.log("errors", errors);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -41,43 +40,29 @@ const Contact = () => {
     const { name, email, phone } = formData;
     const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
+    let formErrors = { name: "", email: "", phone: "" };
+
     if (name === "") {
-      setErrors((prev) => ({
-        ...prev,
-        name: "Can't be empty",
-      }));
+      formErrors = { ...formErrors, name: "Can't be empty" };
     } else if (name.length < 3) {
-      setErrors((prev) => ({
-        ...prev,
-        name: "Name is too short",
-      }));
+      formErrors = { ...formErrors, name: "Name is too short" };
     }
 
     if (email === "") {
-      setErrors((prev) => ({
-        ...prev,
-        email: "Can't be empty",
-      }));
+      formErrors = { ...formErrors, email: "Can't be empty" };
     } else if (!emailRegex.test(email)) {
-      setErrors((prev) => ({
-        ...prev,
-        email: "Invalid email",
-      }));
+      formErrors = { ...formErrors, email: "Invalid email" };
     }
 
     if (phone === "") {
-      setErrors((prev) => ({
-        ...prev,
-        phone: "Can't be empty",
-      }));
+      formErrors = { ...formErrors, phone: "Can't be empty" };
     } else if (phone.length < 3) {
-      setErrors((prev) => ({
-        ...prev,
-        phone: "Number is too short",
-      }));
+      formErrors = { ...formErrors, phone: "Number is too short" };
     }
 
-    const isValid = Object.values(errors).map((error) => error === "");
+    setErrors(formErrors);
+
+    const isValid = Object.values(formErrors).every((error) => error === "");
     if (!isValid) return;
 
     setSuccess(true);
@@ -111,7 +96,7 @@ const Contact = () => {
                 placeholder="Name"
               />
               {errors.name && (
-                <p className="text-[12px] italic absolute right-[2rem] top-[1rem] after:content-error-icon after:absolute after:right-[-1.5rem] after:top-[-.1rem]">
+                <p className="text-[12px] italic absolute right-[2.5rem] top-[1rem] after:content-error-icon after:absolute after:right-[-2rem] after:top-[-.1rem]">
                   {errors.name}
                 </p>
               )}
@@ -128,7 +113,7 @@ const Contact = () => {
                 placeholder="Email"
               />
               {errors.email && (
-                <p className="text-[12px] italic absolute right-[2rem] top-[1rem] after:content-error-icon after:absolute after:right-[-1.5rem] after:top-[-.1rem]">
+                <p className="text-[12px] italic absolute right-[2.5rem] top-[1rem] after:content-error-icon after:absolute after:right-[-2rem] after:top-[-.1rem]">
                   {errors.email}
                 </p>
               )}
@@ -145,7 +130,7 @@ const Contact = () => {
                 placeholder="Phone"
               />
               {errors.phone && (
-                <p className="text-[12px] italic absolute right-[2rem] top-[1rem] after:content-error-icon after:absolute after:right-[-1.5rem] after:top-[-.1rem]">
+                <p className="text-[12px] italic absolute right-[2.5rem] top-[1rem] after:content-error-icon after:absolute after:right-[-2rem] after:top-[-.1rem]">
                   {errors.phone}
                 </p>
               )}
