@@ -15,6 +15,7 @@ export default {
         peach: {
           DEFAULT: "#E7816B",
           light: "#FFAD9B",
+          lighter: "#FDF3F0",
         },
         black: {
           light: "#1D1C1E",
@@ -57,6 +58,8 @@ export default {
           "url('/src/assets/shared/desktop/bg-circle-variant-two.svg')",
         "circle-variant-three":
           "url('/src/assets/shared/desktop/bg-circle-variant-three.svg')",
+        "three-circles":
+          "url('/src/assets/shared/desktop/bg-pattern-three-circles.svg')",
         // design pages
         "web-design-bg":
           "url('/src/assets/web-design/desktop/bg-pattern-intro-web.svg')",
@@ -65,6 +68,7 @@ export default {
         "graphic-design-bg":
           "url('/src/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg')",
         // about
+        // hero
         "about-circle-desktop":
           "url('/src/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
         "about-hero-desktop":
@@ -73,6 +77,13 @@ export default {
           "url('/src/assets/about/tablet/image-about-hero.jpg')",
         "about-hero-mobile":
           "url('/src/assets/about/mobile/image-about-hero.jpg')",
+        // world class
+        "about-world-class-desktop":
+          "url('/src/assets/about/desktop/image-world-class-talent.jpg')",
+        "about-world-class-tablet":
+          "url('/src/assets/about/tablet/image-world-class-talent.jpg')",
+        "about-world-class-mobile":
+          "url('/src/assets/about/mobile/image-world-class-talent.jpg')",
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",

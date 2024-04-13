@@ -26,7 +26,7 @@ const Cards = () => {
       {cardData.map((card) => (
         <article
           key={card.title}
-          className="rounded-2xl bg-[#FDF3F0] flex flex-col sm:flex-row items-center lg:block"
+          className="rounded-2xl bg-peach-lighter flex flex-col sm:flex-row items-center lg:block"
         >
           <img
             src={card.image}
