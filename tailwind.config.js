@@ -60,6 +60,8 @@ export default {
           "url('/src/assets/shared/desktop/bg-circle-variant-three.svg')",
         "three-circles":
           "url('/src/assets/shared/desktop/bg-pattern-three-circles.svg')",
+        "two-circle":
+          "url('/src/assets/shared/desktop/bg-pattern-two-circles.svg')",
         // design pages
         "web-design-bg":
           "url('/src/assets/web-design/desktop/bg-pattern-intro-web.svg')",
@@ -84,6 +86,13 @@ export default {
           "url('/src/assets/about/tablet/image-world-class-talent.jpg')",
         "about-world-class-mobile":
           "url('/src/assets/about/mobile/image-world-class-talent.jpg')",
+        // real deal
+        "about-real-deal-desktop":
+          "url('/src/assets/about/desktop/image-real-deal.jpg')",
+        "about-real-deal-tablet":
+          "url('/src/assets/about/tablet/image-real-deal.jpg')",
+        "about-real-deal-mobile":
+          "url('/src/assets/about/mobile/image-real-deal.jpg')",
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",
