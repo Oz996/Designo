@@ -2,6 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import Button from "../components/shared/Button";
 import Title from "../components/shared/Title";
 import classNames from "classnames";
+import Checkmark from "../assets/contact/desktop/checkmark.svg";
 
 const initState = {
   name: "",
@@ -71,7 +72,7 @@ const Contact = () => {
     <>
       <Title>Contact - Designo</Title>
       <section className="h-[48rem] sm:h-[45rem] lg:h-[30rem] bg-peach sm:rounded-2xl">
-        <div className="flex items-center text-white h-full px-28 gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center max-sm:text-center text-white h-full px-6 sm:px-14 lg:px-28 gap-10">
           <div className="flex flex-col gap-10 w-full">
             <h2 className="heading-mobile sm:heading-lg capitalize">
               contact us
@@ -141,20 +142,24 @@ const Contact = () => {
             <textarea
               onChange={handleChange}
               id="message"
-              rows={5}
+              rows={4}
               className="input resize-none"
               placeholder="Your Message"
             ></textarea>
             <div
               className={classNames({
-                "flex justify-between items-end relative": true,
-                "self-end": !success,
+                "flex flex-col sm:flex-row justify-between items-center sm:items-end relative max-sm:gap-3":
+                  true,
+                "sm:self-end": !success,
               })}
             >
               {success && (
-                <p className="text-sm text-green-200 font-semibold before:content-checkmark before:absolute before:left-0 pl-6">
-                  Your form has been submitted!
-                </p>
+                <div className="flex gap-1">
+                  <img src={Checkmark} alt="" />
+                  <p className="text-sm text-green-200 font-semibold">
+                    Your form has been submitted!
+                  </p>
+                </div>
               )}
               <Button>submit</Button>
             </div>

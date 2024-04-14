@@ -43,7 +43,7 @@ const Locations = () => {
       </section>
 
       <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 ml-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">
             Australia
           </h2>

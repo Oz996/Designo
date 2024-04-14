@@ -38,7 +38,9 @@ const Footer = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <Button>get in touch</Button>
+          <Link to="/contact">
+            <Button>get in touch</Button>
+          </Link>
         </div>
       </div>
       <div
@@ -72,14 +74,14 @@ const Footer = () => {
         </div>
         <hr className="hidden sm:block my-10 w-full border-[#979797]" />
         <div className="flex flex-col sm:flex-row justify-between max-sm:gap-10 max-sm:pt-10">
-          <div className="body text-neutral-500 max-sm:text-center">
+          <div className="body text-white text-opacity-50 max-sm:text-center">
             <address className="not-italic">
               <b> Designo Central Office</b> <br />
               3886 Wellington Street <br />
               Toronto, Ontario M9C 3J5
             </address>
           </div>
-          <div className="body text-neutral-500 max-sm:text-center">
+          <div className="body text-white text-opacity-50 max-sm:text-center">
             <h2 className="font-bold">Contact Us (Central Office)</h2>
             <p>P : +1 253-863-8967</p>
             <p>M : contact@designo.co</p>

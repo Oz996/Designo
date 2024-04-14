@@ -1,10 +1,11 @@
 import classNames from "classnames";
+import { ReactElement } from "react";
 // import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
 
 interface props {
   variant?: "primary" | "secondary";
   size?: "small";
-  children: string;
+  children: string | ReactElement;
 }
 
 const Button = ({ variant = "primary", children }: props) => {
