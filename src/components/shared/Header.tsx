@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/shared/desktop/logo-dark.png";
 import Hamburger from "../../assets/shared/mobile/icon-hamburger.svg";
 import Close from "../../assets/shared/mobile/icon-close.svg";
 import { useEffect, useRef, useState } from "react";
+import classNames from "classnames";
 
 const Header = () => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
+
+  const location = useLocation();
+  const pathName = location.pathname;
 
   // mobile navbar closes if we click anywhere outside it except the close button
   useEffect(() => {
@@ -41,7 +45,11 @@ const Header = () => {
               <li className="relative">
                 <Link
                   to="/about"
-                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
+                  className={classNames({
+                    "after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300":
+                      true,
+                    "after:scale-x-100 after:duration-0": pathName === "/about",
+                  })}
                 >
                   our company
                 </Link>
@@ -49,7 +57,12 @@ const Header = () => {
               <li className="relative">
                 <Link
                   to="/locations"
-                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
+                  className={classNames({
+                    "after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300":
+                      true,
+                    "after:scale-x-100 after:duration-0":
+                      pathName === "/locations",
+                  })}
                 >
                   locations
                 </Link>
@@ -57,7 +70,12 @@ const Header = () => {
               <li className="relative">
                 <Link
                   to="/contact"
-                  className="after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300"
+                  className={classNames({
+                    "after:absolute after:left-0 after:bottom-0 after:w-full after:h-[0.1rem] after:rounded-full after:bg-peach after:origin-left after:scale-x-0 hover:after:scale-x-100 after:duration-300":
+                      true,
+                    "after:scale-x-100 after:duration-0":
+                      pathName === "/contact",
+                  })}
                 >
                   contact
                 </Link>

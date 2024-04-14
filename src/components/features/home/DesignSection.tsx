@@ -4,7 +4,7 @@ import ArrowRight from "../../../assets/shared/desktop/icon-right-arrow.svg";
 
 const DesignSection = () => {
   return (
-    <section className="lg:h-[40rem] flex flex-col lg:flex-row gap-8 justify-between mt-10 text-white uppercase">
+    <section className="lg:h-[40rem] flex flex-col lg:flex-row gap-5 lg:gap-8 justify-between mt-10 text-white uppercase">
       <Link
         to="/webdesign"
         onClick={scrollToTop}
