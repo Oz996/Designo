@@ -18,7 +18,7 @@ const Footer = () => {
         "w-full bg-black-light relative max-sm:flex max-sm:items-end max-sm:pb-10 mt-[23rem]":
           true,
         " sm:h-[24.5rem] h-[51rem]": !contactPage,
-        "sm:h-[20rem]": contactPage,
+        "sm:h-[22rem]": contactPage,
       })}
     >
       <div
@@ -46,7 +46,7 @@ const Footer = () => {
       <div
         className={classNames({
           "container pt-36": true,
-          "pt-20": contactPage,
+          "pt-[6rem]": contactPage,
         })}
       >
         <div className="flex flex-col sm:flex-row justify-between items-center">
