@@ -92,6 +92,11 @@ export default {
           "url('/src/assets/about/tablet/image-real-deal.jpg')",
         "about-real-deal-mobile":
           "url('/src/assets/about/mobile/image-real-deal.jpg')",
+        // contact
+        "contact-bg-desktop":
+          "url('/src/assets/contact/desktop/bg-pattern-hero-desktop.svg')",
+        "contact-bg-mobile":
+          "url('/src/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg')",
       },
       content: {
         "arrow-right": "url('/src/assets/shared/desktop/icon-right-arrow.svg')",

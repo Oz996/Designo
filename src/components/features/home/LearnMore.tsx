@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../../shared/Button";
+import { scrollToTop } from "../../../utils/scrolls";
 
 const LearnMore = () => {
   return (
@@ -15,7 +16,7 @@ const LearnMore = () => {
           Find out more about our services.
         </p>
         <div>
-          <Link to="/about">
+          <Link to="/about" onClick={scrollToTop}>
             <Button>learn more</Button>
           </Link>
         </div>

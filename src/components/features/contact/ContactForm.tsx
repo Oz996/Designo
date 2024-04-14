@@ -80,7 +80,7 @@ const ContactForm = () => {
     setSuccess(true);
   };
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-[68%]">
       <div className="relative">
         <label htmlFor="name" className="sr-only">
           Name

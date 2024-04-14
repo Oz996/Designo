@@ -38,7 +38,7 @@ const Footer = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <Link to="/contact">
+          <Link to="/contact" onClick={scrollToTop}>
             <Button>get in touch</Button>
           </Link>
         </div>
