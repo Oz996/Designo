@@ -3,6 +3,7 @@ import Button from "../components/shared/Button";
 import Title from "../components/shared/Title";
 import classNames from "classnames";
 import Checkmark from "../assets/contact/desktop/checkmark.svg";
+import Countries from "../components/shared/Countries";
 
 const initState = {
   name: "",
@@ -71,7 +72,7 @@ const Contact = () => {
   return (
     <>
       <Title>Contact - Designo</Title>
-      <section className="h-[48rem] sm:h-[45rem] lg:h-[30rem] bg-peach sm:rounded-2xl">
+      <section className="h-[48rem] sm:h-[45rem] lg:h-[30rem] bg-peach sm:rounded-2xl mb-36">
         <div className="flex flex-col lg:flex-row items-center justify-center max-sm:text-center text-white h-full px-6 sm:px-14 lg:px-28 gap-10">
           <div className="flex flex-col gap-10 w-full">
             <h2 className="heading-mobile sm:heading-lg capitalize">
@@ -166,6 +167,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <Countries />
     </>
   );
 };

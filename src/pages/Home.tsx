@@ -23,7 +23,9 @@ const Home = () => {
             experiences. Find out more about our services.
           </p>
           <div>
-            <Button>learn more</Button>
+            <Link to="/about">
+              <Button>learn more</Button>
+            </Link>
           </div>
         </div>
       </section>
