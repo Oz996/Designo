@@ -32,7 +32,7 @@ const Cards = () => {
           <img
             src={card.image}
             alt={card.title}
-            className="w-[20.5rem] lg:w-[22rem] h-[20rem] max-sm:rounded-t-2xl sm:rounded-l-2xl lg:rounded-t-2xl"
+            className="w-[20.5rem] lg:w-[22rem] max-sm:rounded-t-2xl sm:rounded-l-2xl lg:rounded-t-2xl"
           />
           <div className="p-9 text-center space-y-5">
             <h2 className="heading-sm text-peach">{card.title}</h2>
