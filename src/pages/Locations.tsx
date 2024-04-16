@@ -10,8 +10,8 @@ const Locations = () => {
   return (
     <>
       <Title>Locations - Designo</Title>
-      <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+      <section className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
+        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">Canada</h2>
           <div className="flex flex-col sm:flex-row items-center sm:justify-between max-sm:text-center max-sm:gap-10">
             <div className="body">
@@ -42,8 +42,8 @@ const Locations = () => {
         />
       </section>
 
-      <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 ml-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+      <section className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
+        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:ml-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">
             Australia
           </h2>
@@ -76,8 +76,8 @@ const Locations = () => {
         />
       </section>
 
-      <section className="mb-36 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-24 lg:px-32 mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+      <section className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
+        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
           <h2 className="heading-md text-peach max-sm:text-center">
             United Kingdom
           </h2>
