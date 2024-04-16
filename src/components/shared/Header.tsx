@@ -87,7 +87,9 @@ const Header = () => {
       {/* mobile navbar */}
       <header className="flex h-[6rem] sm:hidden w-full absolute left-0 top-0 right-0">
         <div className="container px-5 py-5 flex justify-between items-center relative">
-          <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          </Link>
           <button>
             {mobileNavbar ? (
               <img
