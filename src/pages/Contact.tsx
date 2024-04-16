@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Title>Contact - Designo</Title>
-      <section className="bg-contact-bg-mobile sm:bg-contact-bg-desktop sm:bg-[left_top_-10rem] bg-no-repeat h-[48rem] sm:h-[45rem] lg:h-[30rem] bg-peach sm:rounded-2xl mb-36">
+      <section className="bg-contact-bg-mobile sm:bg-contact-bg-desktop sm:bg-[left_top_-10rem] md:bg-[top_-3.6rem_right_10rem] lg:bg-[left_top_-10rem] bg-no-repeat h-[48rem] sm:h-[45rem] lg:h-[30rem] bg-peach sm:rounded-2xl mb-36">
         <div className="flex flex-col lg:flex-row items-center justify-center max-sm:text-center text-white h-full px-6 sm:px-14 lg:px-28 gap-10">
           <div className="flex flex-col gap-10 w-full">
             <h2 className="heading-mobile sm:heading-lg capitalize">
