@@ -6,17 +6,13 @@ interface props {
   duration?: number;
   delay?: number;
 }
-const MotionDiv = ({
-  className,
-  children,
-  duration = 0.4,
-  delay = 0,
-}: props) => {
+const MotionDiv = ({ className, children, duration = 1, delay = 0 }: props) => {
   return (
     <motion.div
       className={className}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: duration, delay: delay }}
     >
       {children}

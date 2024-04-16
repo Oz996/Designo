@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../../utils/scrolls";
 import ArrowRight from "../../../assets/shared/desktop/icon-right-arrow.svg";
-import MotionDiv from "../../shared/MotionDiv";
+import MotionDiv from "../../shared/Motion/MotionDiv";
 
 const DesignSection = () => {
   return (

@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import ArrowRight from "../../assets/shared/desktop/icon-right-arrow.svg";
 import classNames from "classnames";
 import { scrollToTop } from "../../utils/scrolls";
+import MotionSection from "./Motion/MotionSection";
 
 const DesignSection = () => {
   const location = useLocation();
@@ -24,7 +25,7 @@ const DesignSection = () => {
 
   // conditionally rendering depending on current path compared to link paths
   return (
-    <section className="w-full gap-8 flex flex-col lg:flex-row justify-between text-white uppercase">
+    <MotionSection className="w-full gap-8 flex flex-col lg:flex-row justify-between text-white uppercase">
       {links.map((link) => (
         <Link
           to={link.path}
@@ -51,7 +52,7 @@ const DesignSection = () => {
           </div>
         </Link>
       ))}
-    </section>
+    </MotionSection>
   );
 };
 export default DesignSection;
