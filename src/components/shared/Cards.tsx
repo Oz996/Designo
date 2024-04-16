@@ -1,26 +1,23 @@
 import { useLocation } from "react-router-dom";
 import { WebDesignData } from "../../data/WebDesign";
-import { useEffect, useState } from "react";
 import { Card } from "../../data/CardInterface";
 import { AppDesignData } from "../../data/AppDesign";
 import { GraphicDesignData } from "../../data/GraphicDesign";
 
 const Cards = () => {
-  const [cardData, setCardData] = useState<Card[]>([]);
   const location = useLocation();
-
   const webdesign = location.pathname === "/webdesign";
   const appdesign = location.pathname === "/appdesign";
 
-  useEffect(() => {
-    if (webdesign) {
-      setCardData(WebDesignData);
-    } else if (appdesign) {
-      setCardData(AppDesignData);
-    } else {
-      setCardData(GraphicDesignData);
-    }
-  }, [webdesign, appdesign]);
+  let cardData: Card[] = [];
+
+  if (webdesign) {
+    cardData = WebDesignData;
+  } else if (appdesign) {
+    cardData = AppDesignData;
+  } else {
+    cardData = GraphicDesignData;
+  }
 
   return (
     <section className="w-full grid lg:grid-cols-3 gap-6 mb-[10rem]">
