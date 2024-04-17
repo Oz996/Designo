@@ -14,7 +14,7 @@ const Locations = () => {
   const ausRef = useRef<HTMLDivElement>(null);
   const ukRef = useRef<HTMLDivElement>(null);
 
-  const { country } = useCountry();
+  const { country, setCountry } = useCountry();
 
   useEffect(() => {
     if (country === "canada") {
@@ -31,6 +31,15 @@ const Locations = () => {
       });
     }
   }, [country]);
+
+  const clearCountry = () => {
+    if (country !== "") {
+      setTimeout(() => {
+        setCountry("");
+      }, 1000);
+    }
+  };
+  clearCountry();
 
   return (
     <>
