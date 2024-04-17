@@ -1,17 +1,26 @@
 import classNames from "classnames";
 import { ReactElement } from "react";
+import { motion } from "framer-motion";
 
 interface props {
+  children: string | ReactElement;
   variant?: "primary" | "secondary";
   size?: "small";
-  children: string | ReactElement;
+  animate?: boolean;
 }
 
-const Button = ({ variant = "primary", children }: props) => {
+const Button = ({ variant = "primary", children, animate }: props) => {
   const primary = variant === "primary";
   const secondary = variant === "secondary";
   return (
-    <button
+    <motion.button
+      initial={{
+        scaleX: animate ? 0 : "",
+        opacity: animate ? 0 : "",
+        originX: 0,
+      }}
+      animate={{ scaleX: 1, opacity: 1 }}
+      transition={{ duration: 0.1 }}
       className={classNames({
         "min-w-[9.5rem] uppercase py-4 text-[15px] font-semibold rounded-lg cursor-pointer relative duration-300 overflow-hidden z-20":
           true,
@@ -27,7 +36,7 @@ const Button = ({ variant = "primary", children }: props) => {
       })}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
 

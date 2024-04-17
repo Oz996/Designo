@@ -72,6 +72,8 @@ export default {
         // about - hero
         "about-circle-desktop":
           "url('/src/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
+        "about-circle-mobile":
+          "url('/src/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
         "about-hero-desktop":
           "url('/src/assets/about/desktop/image-about-hero.jpg')",
         "about-hero-tablet":

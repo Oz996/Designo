@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="bg-peach w-full h-[45rem] sm:h-[40rem] lg:h-[30rem] sm:rounded-2xl text-white sm:mb-36">
+    <section className="bg-peach w-full sm:h-[40rem] lg:h-[30rem] sm:rounded-2xl text-white sm:mb-36">
       <div className="flex flex-col-reverse lg:flex-row h-full">
-        <div className="w-full min-w-[15rem] h-full flex flex-col justify-center px-10 sm:px-20 bg-about-circle-desktop bg-right-bottom bg-no-repeat overflow-auto">
+        <div className="w-full min-w-[15rem] h-full flex flex-col justify-center px-10 sm:px-20 max-sm:py-20 bg-about-circle-mobile bg-[right_-2rem_top_-8rem] sm:bg-about-circle-desktop sm:bg-right-bottom bg-no-repeat overflow-auto">
           <motion.div
             className="flex flex-col gap-6"
             initial={{ scaleY: 0 }}
@@ -25,7 +25,7 @@ const AboutSection = () => {
           </motion.div>
         </div>
         <motion.div
-          className="bg-about-hero-mobile sm:bg-about-hero-tablet lg:bg-about-hero-desktop bg-cover lg:w-[60rem] h-full min-h-1/2 sm:rounded-t-2xl lg:rounded-r-2xl lg:rounded-tl-none"
+          className="bg-about-hero-mobile sm:bg-about-hero-tablet lg:bg-about-hero-desktop bg-cover lg:w-[60rem] h-[22rem] sm:h-full min-h-1/2 sm:rounded-t-2xl lg:rounded-r-2xl lg:rounded-tl-none"
           initial={{ scaleX: 0, opacity: 0 }}
           whileInView={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 0.3 }}
