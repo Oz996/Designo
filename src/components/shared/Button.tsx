@@ -30,8 +30,7 @@ const Button = ({ variant = "primary", children, animate }: props) => {
           primary,
         "before:absolute before:inset-0 before:duration-200 before:-z-10 before:active:bg-peach-light":
           true,
-        "bg-white text-black-light before:bg-gray-100 before:w-0 hover:before:w-full hover:pr-3":
-          primary,
+        "bg-white text-black-light hover:pr-3": primary,
         "bg-peach text-white": secondary,
       })}
     >

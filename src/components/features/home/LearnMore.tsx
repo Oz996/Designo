@@ -17,7 +17,7 @@ const LearnMore = () => {
           className="heading-mobile md:heading-lg text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
         >
           Award-winning custom designs and digital branding solutions
         </motion.h2>
@@ -25,7 +25,7 @@ const LearnMore = () => {
           className="body text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2.3 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
         >
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.

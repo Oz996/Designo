@@ -8,10 +8,39 @@ import Instagram from "../../assets/shared/desktop/icon-instagram.svg";
 import Button from "./Button";
 import { scrollToTop } from "../../utils/scrolls";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const location = useLocation();
   const contactPage = location.pathname === "/contact";
+
+  const listItems = [
+    {
+      link: "#",
+      img: Facebook,
+      alt: "Facebook",
+    },
+    {
+      link: "#",
+      img: Youtube,
+      alt: "Youtube",
+    },
+    {
+      link: "#",
+      img: Twitter,
+      alt: "Twitter",
+    },
+    {
+      link: "#",
+      img: Pinterest,
+      alt: "Pinterest",
+    },
+    {
+      link: "#",
+      img: Instagram,
+      alt: "Instagram",
+    },
+  ];
   return (
     <footer
       className={classNames({
@@ -50,7 +79,9 @@ const Footer = () => {
         })}
       >
         <div className="flex flex-col sm:flex-row justify-between items-center">
-          <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          <Link to="/" onClick={scrollToTop}>
+            <img src={Logo} alt="Logo" className="w-48 cursor-pointer" />
+          </Link>
           <hr className="sm:hidden my-8 w-full border-[#979797]" />
           <nav aria-label="secondary">
             <ul className="text-[14px] text-white leading-[26px] uppercase flex flex-col sm:flex-row gap-5 text-center">
@@ -87,31 +118,17 @@ const Footer = () => {
             <p>M : contact@designo.co</p>
           </div>
           <ul className="flex items-end gap-4 justify-center">
-            <li>
-              <Link to="#">
-                <img src={Facebook} alt="Facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img src={Youtube} alt="Facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img src={Twitter} alt="Facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img src={Pinterest} alt="Facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img src={Instagram} alt="Facebook" />
-              </Link>
-            </li>
+            {listItems.map((item) => (
+              <motion.li
+                key={item.img}
+                whileHover={{ scale: 1.15 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Link to={item.link}>
+                  <img src={item.img} alt={item.alt} />
+                </Link>
+              </motion.li>
+            ))}
           </ul>
         </div>
       </div>
