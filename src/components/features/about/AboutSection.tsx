@@ -8,9 +8,8 @@ const AboutSection = () => {
           <motion.div
             className="flex flex-col gap-6"
             initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
+            animate={{ scaleY: 1 }}
             transition={{ duration: 0.3 }}
-            viewport={{ once: true }}
           >
             <h2 className="heading-mobile sm:heading-lg capitalize text-center lg:text-left">
               about us
@@ -24,13 +23,7 @@ const AboutSection = () => {
             </p>
           </motion.div>
         </div>
-        <motion.div
-          className="bg-about-hero-mobile sm:bg-about-hero-tablet lg:bg-about-hero-desktop bg-cover lg:w-[60rem] h-[22rem] sm:h-full min-h-1/2 sm:rounded-t-2xl lg:rounded-r-2xl lg:rounded-tl-none"
-          initial={{ scaleX: 0, opacity: 0 }}
-          whileInView={{ scaleX: 1, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          viewport={{ once: true }}
-        />
+        <div className="bg-about-hero-mobile sm:bg-about-hero-tablet lg:bg-about-hero-desktop bg-cover lg:w-[60rem] h-[22rem] sm:h-full min-h-1/2 sm:rounded-t-2xl lg:rounded-r-2xl lg:rounded-tl-none" />
       </div>
     </section>
   );

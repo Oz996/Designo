@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { ChangeEvent, FormEvent, useState } from "react";
 import Button from "../../shared/Button";
 import Checkmark from "../../../assets/contact/desktop/checkmark.svg";
+import { motion } from "framer-motion";
 
 export interface FormData {
   name: string;
@@ -80,9 +81,12 @@ const ContactForm = () => {
     setSuccess(true);
   };
   return (
-    <form
+    <motion.form
       onSubmit={handleSubmit}
       className="flex flex-col gap-3 w-full lg:w-[68%]"
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="relative">
         <label htmlFor="name" className="sr-only">
@@ -162,7 +166,7 @@ const ContactForm = () => {
         )}
         <Button>submit</Button>
       </div>
-    </form>
+    </motion.form>
   );
 };
 export default ContactForm;
