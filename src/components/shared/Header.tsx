@@ -4,6 +4,7 @@ import Hamburger from "../../assets/shared/mobile/icon-hamburger.svg";
 import Close from "../../assets/shared/mobile/icon-close.svg";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
@@ -107,10 +108,13 @@ const Header = () => {
             )}
           </button>
           {mobileNavbar && (
-            <nav
+            <motion.nav
               ref={navRef}
               aria-label="primary"
-              className=" absolute left-0 top-[5.9rem] z-20 w-full h-[14.5rem] bg-black-light"
+              className="absolute left-0 top-[5.9rem] z-20 w-full h-[14.5rem] bg-black-light"
+              initial={{ scaleY: 0, originY: "top" }}
+              animate={{ scaleY: 1 }}
+              transition={{ duration: 0.2, type: "just" }}
             >
               <ul className="text-[24px] text-white tracking-[2px] uppercase flex flex-col gap-5 px-5 py-10">
                 <li>
@@ -129,7 +133,7 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-            </nav>
+            </motion.nav>
           )}
         </div>
       </header>
