@@ -3,6 +3,7 @@ import Australia from "../../assets/shared/desktop/illustration-australia.svg";
 import UK from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import Button from "./Button";
 import classNames from "classnames";
+import MotionDiv from "./Motion/MotionDiv";
 
 const Countries = () => {
   interface Country {
@@ -28,7 +29,8 @@ const Countries = () => {
   return (
     <section className="grid gap-20 lg:grid-cols-3">
       {countries.map((country, index) => (
-        <div
+        <MotionDiv
+          index={index}
           key={country.title}
           className={classNames({
             "flex flex-col gap-10 justify-center items-center bg-no-repeat bg-top":
@@ -43,7 +45,7 @@ const Countries = () => {
           </div>
           <h2 className="heading-sm uppercase">{country.title}</h2>
           <Button variant="secondary">see location</Button>
-        </div>
+        </MotionDiv>
       ))}
     </section>
   );
