@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../../utils/scrolls";
 import { useCountry } from "../../hooks/useCountry";
 import { CountryNames } from "../../context/countryContext";
+import MotionDiv from "./Motion/MotionDiv";
 
 const Countries = () => {
   interface Country {
@@ -39,7 +40,8 @@ const Countries = () => {
   return (
     <section className="grid gap-20 lg:grid-cols-3">
       {countries.map((country, index) => (
-        <div
+        <MotionDiv
+          index={index}
           key={country.title}
           className={classNames({
             "flex flex-col gap-10 justify-center items-center bg-no-repeat bg-top":
@@ -56,7 +58,7 @@ const Countries = () => {
           <Link to="/locations" onClick={() => handleClick(country.title)}>
             <Button variant="secondary">see location</Button>
           </Link>
-        </div>
+        </MotionDiv>
       ))}
     </section>
   );
