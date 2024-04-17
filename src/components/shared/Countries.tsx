@@ -3,11 +3,14 @@ import Australia from "../../assets/shared/desktop/illustration-australia.svg";
 import UK from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import Button from "./Button";
 import classNames from "classnames";
-import MotionDiv from "./Motion/MotionDiv";
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../../utils/scrolls";
+import { useCountry } from "../../hooks/useCountry";
+import { CountryNames } from "../../context/countryContext";
 
 const Countries = () => {
   interface Country {
-    title: string;
+    title: CountryNames;
     image: string;
   }
 
@@ -26,11 +29,17 @@ const Countries = () => {
     },
   ];
 
+  const { setCountry } = useCountry();
+
+  const handleClick = (title: CountryNames) => {
+    scrollToTop();
+    setCountry(title);
+  };
+
   return (
     <section className="grid gap-20 lg:grid-cols-3">
       {countries.map((country, index) => (
-        <MotionDiv
-          index={index}
+        <div
           key={country.title}
           className={classNames({
             "flex flex-col gap-10 justify-center items-center bg-no-repeat bg-top":
@@ -44,8 +53,10 @@ const Countries = () => {
             <img src={country.image} alt={`illustration of ${country.title}`} />
           </div>
           <h2 className="heading-sm uppercase">{country.title}</h2>
-          <Button variant="secondary">see location</Button>
-        </MotionDiv>
+          <Link to="/locations" onClick={() => handleClick(country.title)}>
+            <Button variant="secondary">see location</Button>
+          </Link>
+        </div>
       ))}
     </section>
   );

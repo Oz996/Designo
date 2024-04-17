@@ -6,15 +6,45 @@ import AustraliaTablet from "../assets/locations/tablet/image-map-australia.png"
 import UK from "../assets/locations/desktop/image-map-united-kingdom.png";
 import UKTablet from "../assets/locations/tablet/image-map-uk.png";
 import MotionSection from "../components/shared/Motion/MotionSection";
+import { useEffect, useRef } from "react";
+import { useCountry } from "../hooks/useCountry";
 
 const Locations = () => {
+  const canRef = useRef<HTMLDivElement>(null);
+  const ausRef = useRef<HTMLDivElement>(null);
+  const ukRef = useRef<HTMLDivElement>(null);
+
+  const { country } = useCountry();
+
+  useEffect(() => {
+    if (country === "canada") {
+      canRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (country === "australia") {
+      ausRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (country === "united kingdom") {
+      ukRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [country]);
+
   return (
     <>
       <Title>Locations - Designo</Title>
       <MotionSection className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0">
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+        <div
+          className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full"
+          ref={canRef}
+        >
           <h2 className="heading-md text-peach max-sm:text-center">Canada</h2>
-          <div className="flex flex-col sm:flex-row items-center sm:justify-between max-sm:text-center max-sm:gap-10">
+          <div
+            className="flex flex-col sm:flex-row items-center sm:justify-between max-sm:text-center max-sm:gap-10"
+            ref={canRef}
+          >
             <div className="body">
               <p className="font-bold">Designo Central Office</p>
               <address className="not-italic">
@@ -43,11 +73,15 @@ const Locations = () => {
         />
       </MotionSection>
 
+      {/* we only set an animation delay if country is set to "" so that in case its set to a country it becomes visible faster when we scroll to it */}
       <MotionSection
         className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0"
-        delay={0.3}
+        delay={country === "" ? 0.3 : 0}
       >
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:ml-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+        <div
+          ref={ausRef}
+          className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:ml-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full"
+        >
           <h2 className="heading-md text-peach max-sm:text-center">
             Australia
           </h2>
@@ -82,9 +116,12 @@ const Locations = () => {
 
       <MotionSection
         className="mb-12 sm:mb-10 h-full grid lg:grid-cols-3 gap-0 sm:gap-10 lg:gap-0"
-        delay={0.6}
+        delay={country === "" ? 0.6 : 0}
       >
-        <div className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full">
+        <div
+          ref={ukRef}
+          className="bg-three-circles sm:bg-two-circle bg-no-repeat sm:bg-center bg-peach-lighter lg:col-span-2 sm:rounded-2xl flex flex-col gap-7 justify-center px-5 sm:px-24 lg:px-32 sm:mr-8 h-[24rem] sm:h-[20rem] lg:h-auto max-lg:w-full"
+        >
           <h2 className="heading-md text-peach max-sm:text-center">
             United Kingdom
           </h2>
