@@ -68,18 +68,17 @@ const Locations = () => {
             </div>
           </div>
         </div>
-        {/* desktop and mobile image */}
-        <img
-          src={Canada}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full max-lg:order-first sm:hidden lg:block"
-        />
-        {/* tablet image */}
-        <img
-          src={CanadaTablet}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full bg-cover max-lg:order-first hidden sm:block lg:hidden"
-        />
+        <picture className="max-lg:order-first">
+          <source
+            media="(min-width: 640px) and (max-width: 1024px)"
+            srcSet={CanadaTablet}
+          />
+          <img
+            src={Canada}
+            alt="Map of office located in Canada"
+            className="sm:rounded-2xl w-full"
+          />
+        </picture>
       </MotionSection>
 
       {/* we only set an animation delay if country is set to "" so that in case its set to a country it becomes visible faster when we scroll to it */}
@@ -109,18 +108,17 @@ const Locations = () => {
             </div>
           </div>
         </div>
-        {/* desktop and mobile image */}
-        <img
-          src={Australia}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full order-first sm:hidden lg:block"
-        />
-        {/* tablet image */}
-        <img
-          src={AustraliaTablet}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full bg-cover max-lg:order-first hidden sm:block lg:hidden"
-        />
+        <picture className="order-first">
+          <source
+            media="(min-width: 640px) and (max-width: 1024px)"
+            srcSet={AustraliaTablet}
+          />
+          <img
+            src={Australia}
+            alt="Map of office located in Canada"
+            className="sm:rounded-2xl w-full order-first"
+          />
+        </picture>
       </MotionSection>
 
       <MotionSection
@@ -149,18 +147,17 @@ const Locations = () => {
             </div>
           </div>
         </div>
-        {/* desktop and mobile image */}
-        <img
-          src={UK}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full max-lg:order-first sm:hidden lg:block"
-        />
-        {/* tablet image */}
-        <img
-          src={UKTablet}
-          alt="Map of office located in Canada"
-          className="sm:rounded-2xl h-full w-full bg-cover max-lg:order-first hidden sm:block lg:hidden"
-        />
+        <picture className="max-lg:order-first">
+          <source
+            media="(min-width: 640px) and (max-width: 1024px)"
+            srcSet={UKTablet}
+          />
+          <img
+            src={UK}
+            alt="Map of office located in Canada"
+            className="sm:rounded-2xl w-full max-lg:order-first"
+          />
+        </picture>
       </MotionSection>
     </>
   );
