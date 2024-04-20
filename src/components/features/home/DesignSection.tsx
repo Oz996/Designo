@@ -9,7 +9,7 @@ const DesignSection = () => {
       <Link
         to="/webdesign"
         onClick={scrollToTop}
-        className="flex flex-col w-full justify-between group active:opacity-90 active:duration-75 hover:opacity-95 duration-300"
+        className="flex flex-col w-full justify-between group active:opacity-90 active:duration-75 hover:opacity-95 duration-300 max-sm:px-3"
       >
         <MotionDiv className="bg-home-web-design-mobile bg-cover sm:bg-home-web-design-tablet lg:bg-home-web-design-desktop h-[15.5rem] sm:h-[12.5rem] lg:h-full flex flex-col gap-5 justify-center items-center rounded-2xl relative">
           <div className="absolute inset-0 image-overlay rounded-2xl" />
@@ -20,7 +20,7 @@ const DesignSection = () => {
           </div>
         </MotionDiv>
       </Link>
-      <MotionDiv className="flex flex-col w-full justify-between gap-5">
+      <MotionDiv className="flex flex-col w-full justify-between gap-5 max-sm:px-3">
         <Link
           to="/appdesign"
           onClick={scrollToTop}

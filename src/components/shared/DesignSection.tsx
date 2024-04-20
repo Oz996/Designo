@@ -25,7 +25,7 @@ const DesignSection = () => {
 
   // conditionally rendering depending on current path compared to link paths
   return (
-    <MotionSection className="w-full gap-8 flex flex-col lg:flex-row justify-between text-white uppercase">
+    <MotionSection className="w-full gap-8 flex flex-col lg:flex-row justify-between text-white uppercase max-sm:px-3">
       {links.map((link) => (
         <Link
           to={link.path}
